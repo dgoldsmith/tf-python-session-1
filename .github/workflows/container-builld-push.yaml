@@ -24,6 +24,6 @@ jobs:
             -t dgoldsmith/tf-python-session-1:latest \
             -t dgoldsmith/f-python-session-1:${GITHUB_SHA::7}-${GITHUB_RUN_ID::5} \
             .
-       - name: Push container
-         run: |
-           docker push dgoldsmith/tf-python-session-1 --all-tags
+      - name: Push container
+        run: |
+          docker push dgoldsmith/tf-python-session-1 --all-tags
