@@ -1,1 +1,1 @@
-USE python
+FROM python
